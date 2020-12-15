@@ -47,7 +47,7 @@ contract SimpleStorage {
         emit StorageSet("addressPayable data stored successfully!");
     }
 
-    function setString(string x) public {
+    function setString(string memory x) public {
         storedString = x;
         emit StorageSet("string data stored successfully!");
     }
@@ -67,7 +67,7 @@ contract SimpleStorage {
       emit StorageSet("direction enum data stored successfully!");
     }
 
-    function setPerson(string firstName, string lastName) public {
+    function setPerson(string memory firstName, string memory lastName) public {
       person.firstName = firstName;
       person.lastName = lastName;
     }
