@@ -79,7 +79,7 @@ contract SimpleStorage {
       emit StorageSet("person data stored successfully!");
     }
 
-    function setPersonByStruct(Person memory _person) {
+    function setPersonByStruct(Person memory _person) public {
         person = _person;
         emit StorageSet("person data stored successfully!");
     }
