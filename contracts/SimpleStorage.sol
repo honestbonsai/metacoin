@@ -51,6 +51,7 @@ contract SimpleStorage {
     function setString(string memory x) public {
         storedString = x;
         emit StorageSet("string data stored successfully!");
+        return storedString;
     }
 
     function setBytes32(bytes32 x) public {
