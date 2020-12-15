@@ -19,6 +19,8 @@ contract SimpleStorage {
         string firstName;
         string lastName;
         Food food;
+        Food[] foods;
+
     }
     Person person;
 
