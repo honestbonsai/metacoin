@@ -75,5 +75,11 @@ contract SimpleStorage {
     function setPerson(string memory firstName, string memory lastName) public {
       person.firstName = firstName;
       person.lastName = lastName;
+      emit StorageSet("person data stored successfully!");
+    }
+
+    function setPersonByStruct(Person _person) {
+        person = _person;
+        emit StorageSet("person data stored successfully!");
     }
 }
