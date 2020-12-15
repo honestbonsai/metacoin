@@ -48,7 +48,7 @@ contract SimpleStorage {
         emit StorageSet("addressPayable data stored successfully!");
     }
 
-    function setString(string memory x) public returns (string) {
+    function setString(string memory x) public returns (string memory) {
         storedString = x;
         emit StorageSet("string data stored successfully!");
         return storedString;
