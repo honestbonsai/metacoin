@@ -62,7 +62,7 @@ contract SimpleStorage {
         emit StorageSet("intArr data stored successfully!");
     }
 
-    function setIntArr(int[] x) public {
+    function setIntArr(int[] memory x) public {
         storedIntArr = x;
         emit StorageSet("intArr data stored successfully!");
     }
