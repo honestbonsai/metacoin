@@ -22,6 +22,7 @@ contract SimpleStorage {
     Person person;
 
     int[] public storedIntArr;
+    int[2][] public storedIntPairsArr;
 
     function setInt(int x) public {
         storedInt = x;
@@ -67,6 +68,11 @@ contract SimpleStorage {
     function setIntArr(int[] memory x) public {
         storedIntArr = x;
         emit StorageSet("intArr data stored successfully!");
+    }
+
+    function setIntPairsArr(int[2][] memory x) public {
+        storedIntPairsArr = x;
+        emit StorageSet("intPairsArr data stored successfully!");
     }
 
     function setDirection(Direction x) public {
