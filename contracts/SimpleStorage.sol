@@ -58,8 +58,13 @@ contract SimpleStorage {
     }
 
     function addInt(int x) public {
-      storedIntArr.push(x);
-      emit StorageSet("intArr data stored successfully!");
+        storedIntArr.push(x);
+        emit StorageSet("intArr data stored successfully!");
+    }
+
+    function setIntArr(int[] x) public {
+        storedIntArr = x;
+        emit StorageSet("intArr data stored successfully!");
     }
 
     function setDirection(Direction x) public {
