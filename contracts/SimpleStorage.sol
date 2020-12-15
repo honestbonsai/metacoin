@@ -16,10 +16,16 @@ contract SimpleStorage {
     Direction public direction;
 
     struct Person {
-      string firstName;
-      string lastName;
+        string firstName;
+        string lastName;
+        Food food;
     }
     Person person;
+
+    struct Food {
+        string name;
+        int calories;
+    }
 
     int[] public storedIntArr;
     int[2][] public storedIntPairsArr;
